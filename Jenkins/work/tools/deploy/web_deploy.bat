@@ -1,0 +1,1 @@
+xcopy "Code\Project\MMP\WebDeploy\Release" "\\99.48.237.116\C$\ccms_web\MMP\" /y /s /e /exclude:web_deploy_exclude.txt

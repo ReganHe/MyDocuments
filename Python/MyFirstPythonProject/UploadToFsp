@@ -1,0 +1,28 @@
+# -*- coding: utf-8 -*-
+
+import unittest
+import os
+# import urllib.request
+import requests
+
+if __name__ == '__main__':
+     # 定义调用的接口地址
+    url = "http://99.48.236.130:9260/FileUpload.ashx"
+    # 获取上传文件路径
+    pa = os.path.abspath("C:/Users/SE0002/Desktop/Muen.txt")
+    # 定义请求头
+    header = {"Content-Type": "multipart/form-data;boundary=\"dd24b7f0-30ef-41ec-92a6-57d87bcb7d06\"", "Authorization": "Base 61bc6439867e4f33b31a4b81f2bdbe96"}
+    # 定义请求体
+    data ="--dd24b7f0-30ef-41ec-92a6-57d87bcb7d06\nContent-Disposition: form-data; name=file; filename=002.jpg; filename*=utf-8''002.jpg\n\nABCDEFGHIGKLMN1234567890\n--dd24b7f0-30ef-41ec-92a6-57d87bcb7d06--"
+    try:
+        re = requests.post(url=url, data=data)
+        print(re.text())
+        """
+        re = urllib.request.Request(url=url, data=data, headers=header, method='POST')
+        resp = urllib.request.urlopen(re)
+        f = resp.read()
+        print(f.decode())
+        """
+    except(ZeroDivisionError, Exception) as e:
+        print(e)
+
