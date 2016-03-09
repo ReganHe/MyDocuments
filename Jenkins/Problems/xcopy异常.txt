@@ -1,0 +1,8 @@
+xcopy problem ¨C Invalid drive specification ¨C 0 File(s) copied
+
+The problem was, that I didn¡¯t have specified drive at all, because I was using UNC path (\\ComputerName\SharedFolder\Resource).
+So, xcopy is reporting with the wrong error message.
+
+In my situation, error was caused by broken network connection. Issuing:
+net use \\ComputerName\SharedFolder\Resource /USER:user_name password
+right before xcopy, fixed the problem.
