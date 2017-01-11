@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="033f1f72-bb56-4e4f-a466-5a6882ca7cd4" name="sysadmin@CMBCCDCCMSDEV01 2015-11-06 15:33:02" runUser="CMBCCDCCMSDEV01\sysadmin" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2015-11-06T15:33:02.8001098+08:00" queuing="2015-11-06T15:33:02.8001098+08:00" start="2015-11-06T15:33:02.8079226+08:00" finish="2015-11-06T15:33:34.1958466+08:00" />
+  <TestSettings name="default" id="f0e53789-084d-49f2-8c9b-2a3fe6c81043">
+    <Execution>
+      <TestTypeSpecific />
+    </Execution>
+    <Deployment runDeploymentRoot="sysadmin_CMBCCDCCMSDEV01 2015-11-06 15_33_02" />
+    <Properties />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="e8f8060b-460a-4c5e-b81d-1ae2bbd019eb" testId="d68b204e-5a1b-0a2e-1411-172fd86f2d96" testName="TokenTest_TokenIsValidAndTimeValid_ReturnCacheToken" computerName="CMBCCDCCMSDEV01" duration="00:00:00.0593293" startTime="2015-11-06T15:33:01.4777934+08:00" endTime="2015-11-06T15:33:01.5813130+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e8f8060b-460a-4c5e-b81d-1ae2bbd019eb" />
+    <UnitTestResult executionId="8e82ae9e-528e-442e-843a-bf9daa3f9a2b" testId="4632076f-d941-0387-32f3-d994cd898f36" testName="TokenTest_TokenIsEmpty_ReturnNewToken" computerName="CMBCCDCCMSDEV01" duration="00:00:00.1626332" startTime="2015-11-06T15:33:01.5920556+08:00" endTime="2015-11-06T15:33:01.7551478+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8e82ae9e-528e-442e-843a-bf9daa3f9a2b" />
+    <UnitTestResult executionId="d970dd88-72a5-4277-9d20-b5ae7fc72ba4" testId="f9f99a99-3a8e-02ca-e1b7-8ff4f7b80903" testName="TokenTest_TimeIsInValid_ReturnNewToken" computerName="CMBCCDCCMSDEV01" duration="00:00:00.0018622" startTime="2015-11-06T15:33:01.7561244+08:00" endTime="2015-11-06T15:33:01.7580776+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d970dd88-72a5-4277-9d20-b5ae7fc72ba4" />
+    <UnitTestResult executionId="058543c2-9a09-46de-9fbf-c063486db95e" testId="12a6d8a5-3ccd-565a-a36e-4123c736a6d5" testName="SendPadImagesToFspTest_Success" computerName="CMBCCDCCMSDEV01" duration="00:00:30.1861627" startTime="2015-11-06T15:33:01.7580776+08:00" endTime="2015-11-06T15:33:31.9467368+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="058543c2-9a09-46de-9fbf-c063486db95e">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Diverter.UnitTests.Business.Service.FspServiceTest.SendPadImagesToFspTest_Success threw exception: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: String</Message>
+          <StackTrace>    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at Diverter.Business.Service.FspService.get_Token() in d:\work\hff_workspace\Diverter\Code\Project\Diverter\Diverter.Business\Service\FspService.cs:line 78
+   at Diverter.Business.Service.FspService.SendPadImagesToFsp(IEnumerable`1 channelImageFiles) in d:\work\hff_workspace\Diverter\Code\Project\Diverter\Diverter.Business\Service\FspService.cs:line 98
+   at Diverter.UnitTests.Business.Service.FspServiceTest.SendPadImagesToFspTest_Success() in d:\work\hff_workspace\Diverter\Code\Project\Diverter\Diverter.UnitTests\Business\Service\FspServiceTest.cs:line 89
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="29633aff-d504-4956-8261-e81c4061a450" testId="2bdda01a-212f-40d3-7a69-d2a61b36a392" testName="SendPadImagesToFspTest_Fail" computerName="CMBCCDCCMSDEV01" duration="00:00:00.0044622" startTime="2015-11-06T15:33:31.9486900+08:00" endTime="2015-11-06T15:33:31.9545496+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="29633aff-d504-4956-8261-e81c4061a450">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Diverter.UnitTests.Business.Service.FspServiceTest.SendPadImagesToFspTest_Fail threw exception: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: String</Message>
+          <StackTrace>    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at Diverter.Business.Service.FspService.get_Token() in d:\work\hff_workspace\Diverter\Code\Project\Diverter\Diverter.Business\Service\FspService.cs:line 78
+   at Diverter.Business.Service.FspService.SendPadImagesToFsp(IEnumerable`1 channelImageFiles) in d:\work\hff_workspace\Diverter\Code\Project\Diverter\Diverter.Business\Service\FspService.cs:line 98
+   at Diverter.UnitTests.Business.Service.FspServiceTest.SendPadImagesToFspTest_Fail() in d:\work\hff_workspace\Diverter\Code\Project\Diverter\Diverter.UnitTests\Business\Service\FspServiceTest.cs:line 112
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="823c301d-a84d-4ffd-94cf-a0d3c43699b6" testId="a761b85e-907e-87ae-0c02-bdc9ff25f999" testName="CallIapsTest_Success" computerName="CMBCCDCCMSDEV01" duration="00:00:00.1853324" startTime="2015-11-06T15:33:31.9545496+08:00" endTime="2015-11-06T15:33:32.1860038+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="823c301d-a84d-4ffd-94cf-a0d3c43699b6" />
+    <UnitTestResult executionId="dc8e747e-8bfc-47c3-ba25-9382e9e4d675" testId="28e39456-b0c1-d63d-51e4-eee02de620ef" testName="AcceptImageTest_Success" computerName="CMBCCDCCMSDEV01" duration="00:00:00.0544644" startTime="2015-11-06T15:33:32.1860038+08:00" endTime="2015-11-06T15:33:32.2680382+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dc8e747e-8bfc-47c3-ba25-9382e9e4d675" />
+    <UnitTestResult executionId="62811856-5ab3-4f83-9f04-482ab84af23b" testId="6be951c5-041a-c473-6c10-b9f5c424610a" testName="AppendImageTest_EsIndexNotFound_False" computerName="CMBCCDCCMSDEV01" duration="00:00:00.0133715" startTime="2015-11-06T15:33:32.2680382+08:00" endTime="2015-11-06T15:33:32.3207746+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="62811856-5ab3-4f83-9f04-482ab84af23b" />
+    <UnitTestResult executionId="ddc729cb-f94e-428a-a73d-06afb92e428a" testId="60bef771-09ed-5de7-fc4b-fb23524b19e4" testName="AppendImageTest_EsIndexFoundAndDocIdAboveZero_False" computerName="CMBCCDCCMSDEV01" duration="00:00:00.0270506" startTime="2015-11-06T15:33:32.3207746+08:00" endTime="2015-11-06T15:33:32.3530024+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ddc729cb-f94e-428a-a73d-06afb92e428a" />
+    <UnitTestResult executionId="5b469a54-24f8-4d42-85be-66a88fb6bfa0" testId="483a08d8-aeab-95ee-d894-236cd897023f" testName="AppendImageTest_EsIndexFoundAndDocIdIsZeroAndTokenIsNull_False" computerName="CMBCCDCCMSDEV01" duration="00:00:00.0021008" startTime="2015-11-06T15:33:32.3530024+08:00" endTime="2015-11-06T15:33:32.3598386+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5b469a54-24f8-4d42-85be-66a88fb6bfa0" />
+    <UnitTestResult executionId="92a4241e-b3c2-4a10-916f-f970a9063a33" testId="2be6b713-3c6f-fb5f-b33a-4b6424b05df8" testName="AppendImageTest_EsIndexFoundAndDocIdIsZeroAndTokenIsValid_True" computerName="CMBCCDCCMSDEV01" duration="00:00:00.0033758" startTime="2015-11-06T15:33:32.3598386+08:00" endTime="2015-11-06T15:33:32.3686280+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="92a4241e-b3c2-4a10-916f-f970a9063a33">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Diverter.UnitTests.Business.Tasks.CmbAppendImageTaskTest.AppendImageTest_EsIndexFoundAndDocIdIsZeroAndTokenIsValid_True threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at Diverter.Business.Tasks.CmbAppendImageTask.InsertFileIdToDb(IEnumerable`1 files) in d:\work\hff_workspace\Diverter\Code\Project\Diverter\Diverter.Business\Tasks\CmbAppendImageTask.cs:line 192
+   at Diverter.Business.Tasks.CmbAppendImageTask.AppendImage(AppendImageFileTask imageData) in d:\work\hff_workspace\Diverter\Code\Project\Diverter\Diverter.Business\Tasks\CmbAppendImageTask.cs:line 145
+   at Diverter.UnitTests.Business.Tasks.CmbAppendImageTaskTest.AppendImageTest_EsIndexFoundAndDocIdIsZeroAndTokenIsValid_True() in d:\work\hff_workspace\Diverter\Code\Project\Diverter\Diverter.UnitTests\Business\Tasks\CmbAppendImageTaskTest.cs:line 130
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d5f67f7c-42f9-4f1b-835a-3a947199b2ce" testId="12f7a305-1b9c-86b6-e701-0ec088d1a014" testName="GetAppendImageFileTasksTest" computerName="CMBCCDCCMSDEV01" duration="00:00:00.0030531" startTime="2015-11-06T15:33:32.3686280+08:00" endTime="2015-11-06T15:33:32.3764408+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d5f67f7c-42f9-4f1b-835a-3a947199b2ce" />
+    <UnitTestResult executionId="3b148ff5-6d64-4021-bb16-3cd6bdefa6cd" testId="ec240ee5-c2ed-9802-dea0-6125a8547c9d" testName="CallIapsTest_Success" computerName="CMBCCDCCMSDEV01" duration="00:00:00.0046824" startTime="2015-11-06T15:33:32.3764408+08:00" endTime="2015-11-06T15:33:32.3871834+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3b148ff5-6d64-4021-bb16-3cd6bdefa6cd" />
+    <UnitTestResult executionId="7e4b1582-df8e-4f49-8fa6-5b835f9f9a8b" testId="3f2ed386-57a7-ced6-ff28-0c6e79e19d1d" testName="AddImageTest_Success_FileId" computerName="CMBCCDCCMSDEV01" duration="00:00:00.0244226" startTime="2015-11-06T15:33:32.3910898+08:00" endTime="2015-11-06T15:33:32.4174580+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7e4b1582-df8e-4f49-8fa6-5b835f9f9a8b" />
+    <UnitTestResult executionId="1c54abcb-45d8-4e07-bb03-3323ed079ae0" testId="8055818d-8aaa-45f6-1601-d7b9f60c9027" testName="AddImageTest_Exception_ThrowException" computerName="CMBCCDCCMSDEV01" duration="00:00:00.0083287" startTime="2015-11-06T15:33:32.4174580+08:00" endTime="2015-11-06T15:33:32.4262474+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1c54abcb-45d8-4e07-bb03-3323ed079ae0" />
+    <UnitTestResult executionId="e7a3d234-0444-4c49-8fb4-8cb2a6d4f711" testId="a9f1bb7f-5358-31da-e571-acd72f90ea22" testName="DeleteImageTest_Success_True" computerName="CMBCCDCCMSDEV01" duration="00:00:00.0035912" startTime="2015-11-06T15:33:32.4262474+08:00" endTime="2015-11-06T15:33:32.4301538+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e7a3d234-0444-4c49-8fb4-8cb2a6d4f711" />
+    <UnitTestResult executionId="14a74f43-fb5d-40e5-afb4-c074bacc54ac" testId="536d8bae-0ea3-6369-3cf3-e6cf704e3cba" testName="DeleteImageTest_Exception_False" computerName="CMBCCDCCMSDEV01" duration="00:00:00.0075612" startTime="2015-11-06T15:33:32.4301538+08:00" endTime="2015-11-06T15:33:32.4379666+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="14a74f43-fb5d-40e5-afb4-c074bacc54ac" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="TokenTest_TokenIsValidAndTimeValid_ReturnCacheToken" storage="d:\work\hff_workspace\diverter\code\project\diverter\diverter.unittests\bin\release\diverter.unittests.dll" id="d68b204e-5a1b-0a2e-1411-172fd86f2d96">
+      <Execution id="e8f8060b-460a-4c5e-b81d-1ae2bbd019eb" />
+      <TestMethod codeBase="D:\work\hff_workspace\Diverter\Code\Project\Diverter\Diverter.UnitTests\bin\Release\Diverter.UnitTests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Diverter.UnitTests.Business.Service.FspServiceTest" name="TokenTest_TokenIsValidAndTimeValid_ReturnCacheToken" />
+    </UnitTest>
+    <UnitTest name="TokenTest_TokenIsEmpty_ReturnNewToken" storage="d:\work\hff_workspace\diverter\code\project\diverter\diverter.unittests\bin\release\diverter.unittests.dll" id="4632076f-d941-0387-32f3-d994cd898f36">
+      <Execution id="8e82ae9e-528e-442e-843a-bf9daa3f9a2b" />
+      <TestMethod codeBase="D:\work\hff_workspace\Diverter\Code\Project\Diverter\Diverter.UnitTests\bin\Release\Diverter.UnitTests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Diverter.UnitTests.Business.Service.FspServiceTest" name="TokenTest_TokenIsEmpty_ReturnNewToken" />
+    </UnitTest>
+    <UnitTest name="TokenTest_TimeIsInValid_ReturnNewToken" storage="d:\work\hff_workspace\diverter\code\project\diverter\diverter.unittests\bin\release\diverter.unittests.dll" id="f9f99a99-3a8e-02ca-e1b7-8ff4f7b80903">
+      <Execution id="d970dd88-72a5-4277-9d20-b5ae7fc72ba4" />
+      <TestMethod codeBase="D:\work\hff_workspace\Diverter\Code\Project\Diverter\Diverter.UnitTests\bin\Release\Diverter.UnitTests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Diverter.UnitTests.Business.Service.FspServiceTest" name="TokenTest_TimeIsInValid_ReturnNewToken" />
+    </UnitTest>
+    <UnitTest name="SendPadImagesToFspTest_Success" storage="d:\work\hff_workspace\diverter\code\project\diverter\diverter.unittests\bin\release\diverter.unittests.dll" id="12a6d8a5-3ccd-565a-a36e-4123c736a6d5">
+      <Execution id="058543c2-9a09-46de-9fbf-c063486db95e" />
+      <TestMethod codeBase="D:\work\hff_workspace\Diverter\Code\Project\Diverter\Diverter.UnitTests\bin\Release\Diverter.UnitTests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Diverter.UnitTests.Business.Service.FspServiceTest" name="SendPadImagesToFspTest_Success" />
+    </UnitTest>
+    <UnitTest name="SendPadImagesToFspTest_Fail" storage="d:\work\hff_workspace\diverter\code\project\diverter\diverter.unittests\bin\release\diverter.unittests.dll" id="2bdda01a-212f-40d3-7a69-d2a61b36a392">
+      <Execution id="29633aff-d504-4956-8261-e81c4061a450" />
+      <TestMethod codeBase="D:\work\hff_workspace\Diverter\Code\Project\Diverter\Diverter.UnitTests\bin\Release\Diverter.UnitTests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Diverter.UnitTests.Business.Service.FspServiceTest" name="SendPadImagesToFspTest_Fail" />
+    </UnitTest>
+    <UnitTest name="CallIapsTest_Success" storage="d:\work\hff_workspace\diverter\code\project\diverter\diverter.unittests\bin\release\diverter.unittests.dll" id="a761b85e-907e-87ae-0c02-bdc9ff25f999">
+      <Execution id="823c301d-a84d-4ffd-94cf-a0d3c43699b6" />
+      <TestMethod codeBase="D:\work\hff_workspace\Diverter\Code\Project\Diverter\Diverter.UnitTests\bin\Release\Diverter.UnitTests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Diverter.UnitTests.Business.Tasks.CmbAcceptImageForIapsTaskTest" name="CallIapsTest_Success" />
+    </UnitTest>
+    <UnitTest name="AcceptImageTest_Success" storage="d:\work\hff_workspace\diverter\code\project\diverter\diverter.unittests\bin\release\diverter.unittests.dll" id="28e39456-b0c1-d63d-51e4-eee02de620ef">
+      <Execution id="dc8e747e-8bfc-47c3-ba25-9382e9e4d675" />
+      <TestMethod codeBase="D:\work\hff_workspace\Diverter\Code\Project\Diverter\Diverter.UnitTests\bin\Release\Diverter.UnitTests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Diverter.UnitTests.Business.Tasks.CmbAcceptImageTaskTest" name="AcceptImageTest_Success" />
+    </UnitTest>
+    <UnitTest name="AppendImageTest_EsIndexNotFound_False" storage="d:\work\hff_workspace\diverter\code\project\diverter\diverter.unittests\bin\release\diverter.unittests.dll" id="6be951c5-041a-c473-6c10-b9f5c424610a">
+      <Execution id="62811856-5ab3-4f83-9f04-482ab84af23b" />
+      <TestMethod codeBase="D:\work\hff_workspace\Diverter\Code\Project\Diverter\Diverter.UnitTests\bin\Release\Diverter.UnitTests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Diverter.UnitTests.Business.Tasks.CmbAppendImageTaskTest" name="AppendImageTest_EsIndexNotFound_False" />
+    </UnitTest>
+    <UnitTest name="AppendImageTest_EsIndexFoundAndDocIdAboveZero_False" storage="d:\work\hff_workspace\diverter\code\project\diverter\diverter.unittests\bin\release\diverter.unittests.dll" id="60bef771-09ed-5de7-fc4b-fb23524b19e4">
+      <Execution id="ddc729cb-f94e-428a-a73d-06afb92e428a" />
+      <TestMethod codeBase="D:\work\hff_workspace\Diverter\Code\Project\Diverter\Diverter.UnitTests\bin\Release\Diverter.UnitTests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Diverter.UnitTests.Business.Tasks.CmbAppendImageTaskTest" name="AppendImageTest_EsIndexFoundAndDocIdAboveZero_False" />
+    </UnitTest>
+    <UnitTest name="AppendImageTest_EsIndexFoundAndDocIdIsZeroAndTokenIsNull_False" storage="d:\work\hff_workspace\diverter\code\project\diverter\diverter.unittests\bin\release\diverter.unittests.dll" id="483a08d8-aeab-95ee-d894-236cd897023f">
+      <Execution id="5b469a54-24f8-4d42-85be-66a88fb6bfa0" />
+      <TestMethod codeBase="D:\work\hff_workspace\Diverter\Code\Project\Diverter\Diverter.UnitTests\bin\Release\Diverter.UnitTests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Diverter.UnitTests.Business.Tasks.CmbAppendImageTaskTest" name="AppendImageTest_EsIndexFoundAndDocIdIsZeroAndTokenIsNull_False" />
+    </UnitTest>
+    <UnitTest name="AppendImageTest_EsIndexFoundAndDocIdIsZeroAndTokenIsValid_True" storage="d:\work\hff_workspace\diverter\code\project\diverter\diverter.unittests\bin\release\diverter.unittests.dll" id="2be6b713-3c6f-fb5f-b33a-4b6424b05df8">
+      <Execution id="92a4241e-b3c2-4a10-916f-f970a9063a33" />
+      <TestMethod codeBase="D:\work\hff_workspace\Diverter\Code\Project\Diverter\Diverter.UnitTests\bin\Release\Diverter.UnitTests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Diverter.UnitTests.Business.Tasks.CmbAppendImageTaskTest" name="AppendImageTest_EsIndexFoundAndDocIdIsZeroAndTokenIsValid_True" />
+    </UnitTest>
+    <UnitTest name="GetAppendImageFileTasksTest" storage="d:\work\hff_workspace\diverter\code\project\diverter\diverter.unittests\bin\release\diverter.unittests.dll" id="12f7a305-1b9c-86b6-e701-0ec088d1a014">
+      <Execution id="d5f67f7c-42f9-4f1b-835a-3a947199b2ce" />
+      <TestMethod codeBase="D:\work\hff_workspace\Diverter\Code\Project\Diverter\Diverter.UnitTests\bin\Release\Diverter.UnitTests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Diverter.UnitTests.Business.Tasks.CmbAppendImageTaskTest" name="GetAppendImageFileTasksTest" />
+    </UnitTest>
+    <UnitTest name="CallIapsTest_Success" storage="d:\work\hff_workspace\diverter\code\project\diverter\diverter.unittests\bin\release\diverter.unittests.dll" id="ec240ee5-c2ed-9802-dea0-6125a8547c9d">
+      <Execution id="3b148ff5-6d64-4021-bb16-3cd6bdefa6cd" />
+      <TestMethod codeBase="D:\work\hff_workspace\Diverter\Code\Project\Diverter\Diverter.UnitTests\bin\Release\Diverter.UnitTests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Diverter.UnitTests.Business.Tasks.HuiheIapsTaskTest" name="CallIapsTest_Success" />
+    </UnitTest>
+    <UnitTest name="AddImageTest_Success_FileId" storage="d:\work\hff_workspace\diverter\code\project\diverter\diverter.unittests\bin\release\diverter.unittests.dll" id="3f2ed386-57a7-ced6-ff28-0c6e79e19d1d">
+      <Execution id="7e4b1582-df8e-4f49-8fa6-5b835f9f9a8b" />
+      <TestMethod codeBase="D:\work\hff_workspace\Diverter\Code\Project\Diverter\Diverter.UnitTests\bin\Release\Diverter.UnitTests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Diverter.UnitTests.ExternalService.FspAdapterTest" name="AddImageTest_Success_FileId" />
+    </UnitTest>
+    <UnitTest name="AddImageTest_Exception_ThrowException" storage="d:\work\hff_workspace\diverter\code\project\diverter\diverter.unittests\bin\release\diverter.unittests.dll" id="8055818d-8aaa-45f6-1601-d7b9f60c9027">
+      <Execution id="1c54abcb-45d8-4e07-bb03-3323ed079ae0" />
+      <TestMethod codeBase="D:\work\hff_workspace\Diverter\Code\Project\Diverter\Diverter.UnitTests\bin\Release\Diverter.UnitTests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Diverter.UnitTests.ExternalService.FspAdapterTest" name="AddImageTest_Exception_ThrowException" />
+    </UnitTest>
+    <UnitTest name="DeleteImageTest_Success_True" storage="d:\work\hff_workspace\diverter\code\project\diverter\diverter.unittests\bin\release\diverter.unittests.dll" id="a9f1bb7f-5358-31da-e571-acd72f90ea22">
+      <Execution id="e7a3d234-0444-4c49-8fb4-8cb2a6d4f711" />
+      <TestMethod codeBase="D:\work\hff_workspace\Diverter\Code\Project\Diverter\Diverter.UnitTests\bin\Release\Diverter.UnitTests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Diverter.UnitTests.ExternalService.FspAdapterTest" name="DeleteImageTest_Success_True" />
+    </UnitTest>
+    <UnitTest name="DeleteImageTest_Exception_False" storage="d:\work\hff_workspace\diverter\code\project\diverter\diverter.unittests\bin\release\diverter.unittests.dll" id="536d8bae-0ea3-6369-3cf3-e6cf704e3cba">
+      <Execution id="14a74f43-fb5d-40e5-afb4-c074bacc54ac" />
+      <TestMethod codeBase="D:\work\hff_workspace\Diverter\Code\Project\Diverter\Diverter.UnitTests\bin\Release\Diverter.UnitTests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="Diverter.UnitTests.ExternalService.FspAdapterTest" name="DeleteImageTest_Exception_False" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="d68b204e-5a1b-0a2e-1411-172fd86f2d96" executionId="e8f8060b-460a-4c5e-b81d-1ae2bbd019eb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4632076f-d941-0387-32f3-d994cd898f36" executionId="8e82ae9e-528e-442e-843a-bf9daa3f9a2b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f9f99a99-3a8e-02ca-e1b7-8ff4f7b80903" executionId="d970dd88-72a5-4277-9d20-b5ae7fc72ba4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="12a6d8a5-3ccd-565a-a36e-4123c736a6d5" executionId="058543c2-9a09-46de-9fbf-c063486db95e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2bdda01a-212f-40d3-7a69-d2a61b36a392" executionId="29633aff-d504-4956-8261-e81c4061a450" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a761b85e-907e-87ae-0c02-bdc9ff25f999" executionId="823c301d-a84d-4ffd-94cf-a0d3c43699b6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="28e39456-b0c1-d63d-51e4-eee02de620ef" executionId="dc8e747e-8bfc-47c3-ba25-9382e9e4d675" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6be951c5-041a-c473-6c10-b9f5c424610a" executionId="62811856-5ab3-4f83-9f04-482ab84af23b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="60bef771-09ed-5de7-fc4b-fb23524b19e4" executionId="ddc729cb-f94e-428a-a73d-06afb92e428a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="483a08d8-aeab-95ee-d894-236cd897023f" executionId="5b469a54-24f8-4d42-85be-66a88fb6bfa0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2be6b713-3c6f-fb5f-b33a-4b6424b05df8" executionId="92a4241e-b3c2-4a10-916f-f970a9063a33" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="12f7a305-1b9c-86b6-e701-0ec088d1a014" executionId="d5f67f7c-42f9-4f1b-835a-3a947199b2ce" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ec240ee5-c2ed-9802-dea0-6125a8547c9d" executionId="3b148ff5-6d64-4021-bb16-3cd6bdefa6cd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3f2ed386-57a7-ced6-ff28-0c6e79e19d1d" executionId="7e4b1582-df8e-4f49-8fa6-5b835f9f9a8b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8055818d-8aaa-45f6-1601-d7b9f60c9027" executionId="1c54abcb-45d8-4e07-bb03-3323ed079ae0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a9f1bb7f-5358-31da-e571-acd72f90ea22" executionId="e7a3d234-0444-4c49-8fb4-8cb2a6d4f711" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="536d8bae-0ea3-6369-3cf3-e6cf704e3cba" executionId="14a74f43-fb5d-40e5-afb4-c074bacc54ac" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="17" executed="17" passed="14" failed="3" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="CMBCCDCCMSDEV01" outcome="Warning" timestamp="2015-11-06T15:33:01.2326668+08:00">
+        <Text>Diagnostic data adapter ('Code Coverage') message: The ASP.Net component of Internet Information Services could not be detected on the computer..</Text>
+      </RunInfo>
+    </RunInfos>
+    <CollectorDataEntries>
+      <Collector agentName="CMBCCDCCMSDEV01" uri="datacollector://microsoft/CodeCoverage/2.0" collectorDisplayName="Code Coverage">
+        <UriAttachments>
+          <UriAttachment>
+            <A href="CMBCCDCCMSDEV01\sysadmin_CMBCCDCCMSDEV01 2015-11-06 15_33_00.coverage">
+            </A>
+          </UriAttachment>
+        </UriAttachments>
+      </Collector>
+    </CollectorDataEntries>
+  </ResultSummary>
+</TestRun>
