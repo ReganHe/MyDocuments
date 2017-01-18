@@ -1,0 +1,8 @@
+mvn 
+	-v 查看版本
+	compile 编译
+	test 测试
+	package 打包
+
+	clean 清空target
+	install 安装Jar包到仓库中，并编译，测试
