@@ -69,10 +69,13 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/wu/Documents/Mark/GitHub/Private/MyDocuments"
+		"/Users/wu/Documents/Mark/GitHub/Private/MyDocuments",
+		"/Users/wu/Documents/Mark/GitHub/Private/MyDocuments/Editors"
 	],
 	"file_history":
 	[
+		"/Users/wu/Documents/Mark/GitHub/Private/MyDocuments/Editors/sublime",
+		"/Users/wu/Documents/Mark/GitHub/Private/MyDocuments/NodeJs/nvm",
 		"/Users/wu/Documents/Mark/GitHub/index.ios.js",
 		"/Users/wu/Documents/Mark/GitHub/Public/imoocApp/src/index.ios.js",
 		"/Users/wu/Documents/Mark/GitHub/Public/imoocApp/src/index.android.js",
@@ -125,7 +128,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
