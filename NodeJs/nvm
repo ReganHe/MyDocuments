@@ -1,0 +1,9 @@
+1. 安装版本 
+	nvm install v4.2.3
+	nvm install v6.9.0
+2. 使用指定版本
+	nvm use v4.2.3
+3. 展示所有已安装的版本
+	nvm list
+4. 展示当前使用的版本
+	nvm current
