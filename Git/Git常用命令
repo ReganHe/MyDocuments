@@ -1,0 +1,15 @@
+gst
+git config -l
+git reset HEAD~1
+git pull origin feature-refund-170331
+gpsup
+git stash
+git stash pop
+git diff config.js
+vim config.js
+git stash list 
+git add .
+git stash pop
+git show 1350f638823b2d162fe74f7be955fff
+git commit --amend --author "heke@hujiang.com"
+git logs
