@@ -3,3 +3,7 @@
 
 路径可配置，配置文件为{MAVEN_HOME}\conf\settings.xml
 如：D:\Program Files (x86)\apache-maven-3.3.9\conf\settings.xml
+
+命令：man -v 
+    展示 Maven home,Maven version,Java home,Java version
+
