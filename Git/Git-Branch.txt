@@ -1,0 +1,7 @@
+场景1：在分支Branch-Develop上，发布了某个版本Ver1.2.1，然后继续在该分支上开发新功能；这时，测试部门发现了已发布版本Ver1.2.1的一些BUG；
+解决方案：
+a.在分支Branch-Develop上，对版本Ver1.2.1新建一个分支，命名为Branch-Ver1.2.1-Bugfix;
+b.修改后，将Branch-Ver1.2.1-Bugfix向分支Branch-Develop做一次合并；
+c.当测试部门发现已发布版本Ver1.2.1的新问题时，仍在Branch-Ver1.2.1-Bugfix上做修改，修改完毕后仍要向向分支Branch-Develop做合并;
+d.直到Branch-Develop发布了新了版本Ver1.2.2,则可删掉分支Branch-Ver1.2.1-Bugfix；
+e.如果测试部门测出了版本Ver1.2.2的问题，则要建立新的分支Branch-Ver1.2.2-Bugfix；

@@ -1,0 +1,17 @@
+***Git新增文件提交到本地
+git add .
+git commit -m "bug fix second"
+***Git本地提交同步到远端
+git remote add origin git@xx.xx.xx.xx:repos/xxx/xxx/xxx.git
+git push origin 本地分支:远程分支
+5.git push origin 本地分支:远程分支
+git push origin master
+***Git新增分支，并同步到远端
+git branch bugfix
+git checkout bugfix
+git push -u origin bugfix
+***Git提交到指定分支
+git push origin bugfix
+
+注意事项
+不要同时打开多个Git客户端

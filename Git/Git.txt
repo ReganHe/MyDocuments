@@ -1,0 +1,17 @@
+gitlab.yeshj.com
+
+
+ssh-keygen -t rsa -C "$your_email"
+
+cat ~/.ssh/id_rsa.pub
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDX/Mc7ULj58SF1r6qEVFdH8ts8S0QoG9GWSMHrBtI/AyKXurK09NK6zPsS0AYVz96zWUC5l4UhB646u5OHrVOCKVQi/N9f7Vemm3ISpeguEqhriMGjdWEK22zq3DlmWI/ucrMaQfykCSqo3xBZ51vMF1Stf5h36nb8vEm1i12xaSd+ow4MKNFNA1ZVPiApK09QfRQpJdwAtN/+zRurzaN4syHhEh+osV6b7PH1hrY1gkmhKZR/xYpVJ7WnA1JcJB/G6Quyd9Ix+Okgn6sQhKZ4PepfiBhmuAi/isP+hrby3nSr0SOWfxJFV1vXEUhgPDh1Va0NOnZjvmguSSvc/zib heke@hujiang.com
+
+
+
+--master  
+
+develop
+
+***回退已提交未推送版本
+git reset head^
