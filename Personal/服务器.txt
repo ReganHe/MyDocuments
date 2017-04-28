@@ -1,0 +1,42 @@
+QA服务器（阿宝）
+192.168.25.111
+hjdev_libaoheng
+05186463077
+
+堡垒机登录地址：https://10.10.50.248 
+账户：hjibgheke
+密码：1qaz@WSX3edc
+
+jenkins站点管理员
+heke 1qaz@WSX
+libaoheng 123465
+
+Jenkins服务器 192.168.22.67
+hjadminheke
+1qaz@WSX
+
+192.168.36.103共享目录
+hjdev_1qaz@WSX
+
+
+网校Job服务器（盛海军）
+产线地址：10.10.10.106
+
+网校linux开发服务器 
+系统： centos6.5 
+IP:192.168.156.203 
+账号：classdev 
+密码：class@hujiang 
+
+
+Druid SQL Stat
+admin_admin
+
+116
+密码：2wsxVFR$
+
+
+
+
+
+

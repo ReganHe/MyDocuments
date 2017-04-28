@@ -1,0 +1,23 @@
+网校
+http://local.www.hjclass.com/
+http://qaclass.hujiang.com/
+Same_He hk411327@
+部落虎001 123465
+po 123465
+
+网校管理中心
+http://qaadmin.hjclass.com/classadmin/default.aspx
+po 123465
+
+教务系统 
+http://qa.openplatform.hujiang.com/
+wenxun002 123465
+
+
+网店
+http://qa.admin.buy.hujiang.com/shopadmin/###
+simon simon
+Same_He hk411327@
+
+
+
