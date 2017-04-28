@@ -1,0 +1,19 @@
+初始化
+git init
+
+添加远端分支
+git remote add origin git@git.coding.net:Mark_He/self-manage-web.git
+
+默认情况下，git fetch取回所有分支(branch)的更新。如果只想取回特定分支的更新，可以指定分支名。
+不会自动merge
+git fetch
+
+创建或切换至分支
+-t即-track, 用于设定关联 --set-upstream-to
+git checkout -t origin/master
+
+从远端拉取
+git pull origin master
+
+关联本地和远端
+git branch  --set-upstream-to=origin/master master
