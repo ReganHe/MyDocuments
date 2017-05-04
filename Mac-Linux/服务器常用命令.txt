@@ -1,0 +1,26 @@
+连接服务器
+ssh -p 59155 hjadminops@192.168.36.146
+2wsxVFR$
+退出登录
+logout/exit
+
+跟踪日志
+tailf /home/logs/productDataSync/logstash/logstash.log
+退出跟踪 Ctrl + C
+
+任务管理器-查看正在运行的进程信息（端口、PID）
+netstat -npl
+根据端口过滤进程
+netstat -npl |grep 8080
+查看进程
+ps aux|grep 8080
+ps aux|grep productDataSync
+杀死进程
+kill -9 <pid>
+
+查看内存(-h,--human人性化展示)
+free -h
+
+查看帮助
+man free
+

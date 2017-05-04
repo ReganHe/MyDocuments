@@ -1,0 +1,38 @@
+1.效果对比
+压缩前：
+<html>
+<head>
+    <title>Hello &lt;Nunjucks&gt;</title>
+</head>
+<body>
+    <h3>Fruits List</h3>
+    
+    <p>Apple</p>
+    
+    <p>Pear</p>
+    
+    <p>Banana</p>
+    
+    <p>Total: 0x2ee0</p>
+</body>
+</html>
+
+压缩后：
+<html><head><title>Hello &lt;Nunjucks&gt;</title></head><body><h3>Fruits List</h3><p>Apple</p><p>Pear</p><p>Banana</p><p>Total: 0x2ee0</p></body></html>
+2.引用包版本
+	"html-minifier": "^3.0.2"
+3. 使用示例
+const minifier = require('html-minifier').minify;
+s="..."
+s = minifier(s, {
+    removeComments: true,
+    removeEmptyAttributes: false,
+    removeEmptyElements: false, 
+    removeTagWhitespace: true,
+    removeAttributeQuotes: true,
+    collapseWhitespace: true
+});
+4. 参数分析
+	removeEmptyElements: Remove all elements with empty contents
+	Collapse whitespace: Collapse white space that contributes to text nodes in a document tree
+	Remove empty attributes: Remove all attributes with whitespace-only values 
