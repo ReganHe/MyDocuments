@@ -1,0 +1,19 @@
+当前规则：
+{
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "extends": "airbnb-base",
+  "rules": {
+    "no-console": "off",
+    "object-curly-spacing": "off",
+    "import/no-dynamic-require": "off",
+    "no-param-reassign": "off"
+  }
+}
+规则解析：
+no-console：禁用控制台
+object-curly-spacing：大括号内外保留一个空格
+import/no-dynamic-require：引用路径中禁止使用变量
+no-param-reassign：禁止对参数进行重新指定
+
