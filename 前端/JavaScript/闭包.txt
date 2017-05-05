@@ -1,0 +1,19 @@
+var name = "The Window";
+
+var object = {
+  name: "My Object",
+
+  getNameFunc: function () {
+    var that = this;
+    return function () {
+      return that.name;
+    };
+
+  }
+
+};
+
+console.log(object.getNameFunc()());
+
+object的定义一定不是函数，而是一个对象。
+里面引用了一个全局变量和一个函数（使用了闭包）。
