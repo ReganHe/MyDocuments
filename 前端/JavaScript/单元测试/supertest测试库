@@ -1,0 +1,3 @@
+1. Super-agent driven library for testing node.js HTTP servers using a fluent API.
+2. You may pass an http.Server, or a Function to request() - if the server is not already listening for connections then it is bound to an ephemeral port 	for you so there is no need to keep track of ports.
+3. SuperTest works with any test framework, here is an example without using any test framework at all.

@@ -1,0 +1,34 @@
+JavaScript的简单数据类型包括数字、字符串、布尔值、null值和undefined值，其它所有的值都是对象。
+JavaScript中的对象是可变的键控集合（keyed collections）.
+在JavaScript中，数组是对象，正则表达式是对象，函数也是对象，对象也是对象。
+对象字面量就是包围在一对花括号中的零或多个"名/值"对。
+	如果属性名是一个合法的JavaScript标识符且不是保留字，且无需用引号括住。
+	"||"运算符可以用来填充属性的默认值
+对象
+	对象通过引用来传递，永远不会被复制。
+原型
+	每个对象都连接到一个原型对象，并且从原型对象继承属性。
+	所有通过对象字面量创建的对象都连接到object.prototype,它是JavaScript中的标配对象。
+	当创建一个新对象时，可以选择某个对象作为它的原型。
+		if (typeof Object.beget !== 'function'){
+			Object.Create = function (o){
+				var F=function () {};
+				F.prototype = o;
+				return new F();
+			};
+		}
+
+		var another_stooge = Object.create(stooge);
+原型链
+	原型连接只有在检索值的时候才被用到。
+		如果我们尝试去获取对象的某个属性值，
+		但该对象没有此属性名，则JavaScript会试着从原型对象中获取属性值。
+		如果还没有，则从原型的原型中寻找，直到该过程最终到达终点Object.prototype.
+	原型连接在更样时不起作用的。
+		当某个对象改变时，不会改变原型。
+反射
+	typeof 操作符用于确定属性的类型
+	hasOwnProperty方法用于检查对象的独有属性，不会检查原型链
+减少全局变量污染
+	最小化使用全局变量的方法之一是为应用创建一个唯一的全局变量；
+	另一种有效减少全局污染的方法是使用闭包来进行信息隐藏。
