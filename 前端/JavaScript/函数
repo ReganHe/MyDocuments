@@ -1,0 +1,64 @@
+函数调用
+	调用一个函数会暂停当前函数的执行，传递控制权和参数给新函数.
+	除了声明时定义的形式参数，每个函数还接收两个附加的参数：this 和 arguments.
+		参数this在面向对象编程中非常重要，它的值取决于调用的模式。
+调用模式
+	JavaScript一共有4种调用模式：
+		方法调用模式
+			类似面向对象的方法调用，这时this即对象实例
+
+		函数调用模式
+			当一个函数并非一个对象的属性时，即作为一个函数来调用。
+			this被绑定到全局对象。
+			这是语言设计上的一个错误，导致函数内部的闭包函数无法访问this.
+		    　　var name = "The Window";
+		    　　var object = {
+		    　　　　name : "My Object",
+		    　　　　getNameFunc : function(){
+		    　　　　　　return function(){
+		    　　　　　　　　return this.name;
+		    　　　　　　};
+
+		    　　　　}
+
+		    　　};
+
+		    　　alert(object.getNameFunc()()); //undefined
+
+			解决办法：
+			   var name = "The Window";
+			　　var object = {
+			　　　　name : "My Object",
+			　　　　getNameFunc : function(){
+			　　　　　　var that = this;
+			　　　　　　return function(){
+			　　　　　　　　return that.name;
+			　　　　　　};
+
+			　　　　}
+
+			　　};
+
+			　　alert(object.getNameFunc()());  //"My Object"
+
+		构造器调用模式
+			所谓构造函数，就是通过这个函数生成一个新对象（object）。这时，this就指这个新对象。
+			    　　function test(){
+			    　　　　this.x = 1;
+			    　　}
+
+			    　　var o = new test();
+			    　　alert(o.x); // 1
+			运行结果为1。为了表明这时this不是全局对象，我对代码做一些改变：
+			    　　var x = 2;
+			    　　function test(){
+			    　　　　this.x = 1;
+			    　　}
+
+			    　　var o = new test();
+			    　　alert(x); //2
+			运行结果为2，表明全局变量x的值根本没变。
+
+		apply调用模式
+			function.apply(arg)
+			此时function中的this即为arg.
