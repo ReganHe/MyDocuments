@@ -1,0 +1,35 @@
+详情
+	https://github.com/Unitech/PM2/
+安装
+	hnpm i pm2 -g
+查看版本
+	pm2 -v
+查看pm2下运行的进程列表
+	pm2 list
+杀死并删除应用
+	pm2 delete all
+	pm2 delete 0 //Delete app with id 0,not pid 0
+启动
+	直接启动文件
+		pm2 start bin/index.js --node-args="--harmony"
+	启动配置文件
+		pm2 start process.yml
+		配置文件
+			apps:
+			  - script   : bin/index.js
+			    name     : app-koa2sms
+			    watch    : true
+			    # instances: 2
+			    node_args: --harmony
+			    exec_mode: fork
+			    #error_file: /log/err.log
+			    #out_file: /log/out.log
+			    env :
+			      PORT: 3000
+			      NODE_ENV: dev
+监控
+	Keymetrics
+		https://app.keymetrics.io/#/
+
+
+
