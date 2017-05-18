@@ -1,0 +1,17 @@
+Applicative编程
+定义
+	函数A作为参数提供给函数B.
+常用实例
+	map
+	reduce
+	filter
+集合中心编程
+	函数式编程对于需要操作集合中元素的任务非常有用。
+其它实例
+	reduceRight
+	find
+	reject
+	all
+	any
+	sortBy,groupBy和countBy
+定义几个Applicative函数

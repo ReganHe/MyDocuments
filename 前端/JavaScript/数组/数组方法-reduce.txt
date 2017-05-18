@@ -24,3 +24,4 @@ reduce 方法 (Array) (JavaScript)
 		如果未提供 initialValue：
 		    previousValue 参数是数组中的第一个元素的值。
 		    currentValue 参数是数组中的第二个元素的值。
+			    		 

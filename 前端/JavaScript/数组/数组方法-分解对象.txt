@@ -1,0 +1,24 @@
+var zombie={name:"Bub",film:"Day of the Dead"}
+#keys
+	返回对象中键的数组
+	_.keys(zombie)
+	//=>["name","film"]
+#values
+	返回对象中值的数组
+	_.values(zombie)
+	//=>["Bub","Day of the Dead"]
+#pluck
+	返回对象数组中指定键对应的值的数组
+	_.pluck([
+		{title:"A",author:"alice"},
+		{title:"B",author:"mark"}
+	],'author')
+	//=>["alice","mark"]
+#pairs
+	将对象拆分为二维数组
+	_.pairs(zombie)
+	//=>[ [ 'name', 'Bub' ], [ 'film', 'Day of the Dead' ] ]
+#object
+	将二维数组还原成对象
+	_.object(_.pairs(zombie));
+	//=>{name:"Bub",film:"Day of the Dead"}
