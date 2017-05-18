@@ -1,0 +1,4 @@
+vim 1.txt
+cat 1.txt
+more 1.txt
+less 1.txt

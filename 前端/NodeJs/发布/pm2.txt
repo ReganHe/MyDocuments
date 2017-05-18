@@ -4,11 +4,17 @@
 	hnpm i pm2 -g
 查看版本
 	pm2 -v
-查看pm2下运行的进程列表
+查看应用列表
 	pm2 list
-杀死并删除应用
+查看单个应用详情
+	pm2 show 0 //id=0,not pid
+	pm2 show app-koa2sms //name="app-koa2sms"
+停止应用
+	pm2 stop app-koa2sms //name="app-koa2sms"
+停止并删除应用
 	pm2 delete all
 	pm2 delete 0 //Delete app with id 0,not pid 0
+	pm2 delete app-koa2sms //name="app-koa2sms"
 启动
 	直接启动文件
 		pm2 start bin/index.js --node-args="--harmony"
@@ -27,6 +33,10 @@
 			    env :
 			      PORT: 3000
 			      NODE_ENV: dev
+	启动指定启用
+		pm2 start app-koa2sms //name="app-koa2sms"
+		pm2 start 0 //id=0,not pid
+
 监控
 	Keymetrics
 		https://app.keymetrics.io/#/
