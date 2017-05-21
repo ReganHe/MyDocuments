@@ -1,0 +1,4 @@
+动态作用域
+	#锁定
+		_.bind(target,'nope')，可以锁定this使其不被更改；
+		_.bindAll(target,'aux','act'),可以锁定this引用到对应的命名函数；
