@@ -1,0 +1,13 @@
+jmap -heap
+jhat
+jhat -h
+jhat -version
+sudo su -
+top 
+free
+clear 
+export
+jconsole
+pwd
+taif -100f logstash.log
+jupyter
