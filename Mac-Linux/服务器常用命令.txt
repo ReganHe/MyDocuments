@@ -20,6 +20,14 @@ kill -9 <pid>
 
 查看内存(-h,--human人性化展示)
 free -h
+查看进程
+top 
+	inux下常用的性能分析工具，能够实时显示系统中各个进程的资源占用状况，类似于Windows的任务管理器。	
+	top -pid 8888
+查看内存
+free
+	free命令可以显示Linux系统中空闲的、已用的物理内存及swap内存,及被内核使用的buffer。
+	free -m 
 
 查看帮助
 man free

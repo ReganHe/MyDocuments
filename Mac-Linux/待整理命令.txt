@@ -4,10 +4,13 @@ jhat -h
 jhat -version
 sudo su -
 top 
+	inux下常用的性能分析工具，能够实时显示系统中各个进程的资源占用状况，类似于Windows的任务管理器。	
+	top -pid 8888
 free
-clear 
+	free命令可以显示Linux系统中空闲的、已用的物理内存及swap内存,及被内核使用的buffer。
+	free -m 
+clear 清屏
 export
 jconsole
 pwd
-taif -100f logstash.log
 jupyter
