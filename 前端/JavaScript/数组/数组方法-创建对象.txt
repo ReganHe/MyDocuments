@@ -1,0 +1,11 @@
+//创建
+var tmp = [];  
+var tmp = new Array();
+var tmp = Array();
+
+//创建时初始化数组长度
+var tmp = new Array(3);
+
+//创建并初始化值
+var tmp = new Array('a');
+var tmp = ['a']

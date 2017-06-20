@@ -1,0 +1,6 @@
+ssh -p 59155 ops-jumpserver-intra.yeshj.com -l heke
+功能说明：
+	通过跳板机登录远程服务器
+参数说明：
+	-p 端口号
+	-l 用户名

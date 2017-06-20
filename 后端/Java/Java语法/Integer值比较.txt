@@ -1,0 +1,29 @@
+Integer
+Integer值进行==比较
+	在-128~127的Integer值并且以Integer x = value;的方式赋值的
+		返回true
+		因为Java里面对处在在-128~127之间的Integer值，用的是原生数据类型int，会在内存里供重用，
+		也就是说这之间的Integer值进行==比较时只是进行int原生数据类型的数值比较，
+	超出-128~127的范围
+		进行==比较时是进行地址及数值比较。
+Integer值进行equals比较
+	Integer里面的equals方法重写了Object的equals方法，
+	查看Integer源码可以看出equals方法进行的是数值比较。
+	最安全的比较方式
+		Objects.equals(a,2)
+解析
+	包装器：
+	    Boolean：(全部缓存)
+	    Byte：(全部缓存)
+
+	    Character(<= 127缓存)
+	    Integer(-127 - 127缓存)
+	    Short(-128 — 127缓存)
+	    Long(-128 — 127缓存)
+
+	    Float(没有缓存)
+	    ﻿﻿﻿﻿﻿﻿Doulbe(没有缓存)
+	Integer vs int
+		Integer是引用类型，默认值为null
+		int是值类型，默认值为0
+

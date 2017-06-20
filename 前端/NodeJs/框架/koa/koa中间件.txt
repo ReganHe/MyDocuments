@@ -1,0 +1,34 @@
+#Koa的中间件是一个级联式（Cascading）的结构
+#只要有一个中间件缺少yield next语句，后面的中间件都不会执行
+	app.use(function *(next){
+	  console.log('>> one');
+	  yield next;
+	  console.log('<< one');
+	});
+
+	app.use(function *(next){
+	  console.log('>> two');
+	  this.body = 'two';
+	  console.log('<< two');
+	});
+
+	app.use(function *(next){
+	  console.log('>> three');
+	  yield next;
+	  console.log('<< three');
+	});
+
+	上面代码中，因为第二个中间件少了yield next语句，第三个中间件并不会执行。
+#如果想跳过一个中间件，可以直接在该中间件的第一行语句写上return yield next。
+#Koa要求中间件唯一的参数就是next，导致如果要传入其他参数，必须另外写一个返回Generator函数的函数。
+		function logger(format) {
+		  return function *(next){
+		    var str = format
+		      .replace(':method', this.method)
+		      .replace(':url', this.url);
+		    console.log(str);
+		    yield next;
+		  }
+		}
+		app.use(logger(':method :url'));
+	上面代码中，真正的中间件是logger函数的返回值，而logger函数是可以接受参数的。

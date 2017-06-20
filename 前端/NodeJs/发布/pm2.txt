@@ -37,7 +37,10 @@
 		pm2 start app-koa2sms //name="app-koa2sms"
 		pm2 start 0 //id=0,not pid
 
+日志
+	pm2 logs app-koa2sms --lines 100
 监控
+	pm2 monitor
 	Keymetrics
 		https://app.keymetrics.io/#/
 

@@ -1,0 +1,10 @@
+#yield ''会导致程序暂停
+#yield* 对应的类型
+	1. 生成器Generator
+	2. 可迭代的对象
+		字符串
+		数组
+		类数组arguments
+		ES6中的Map
+		ES6中的Set
+		

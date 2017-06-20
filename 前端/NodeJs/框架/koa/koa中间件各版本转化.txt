@@ -1,0 +1,3 @@
+# koa-convert 中间件（1.x <-> 2.x）
+	Convert koa legacy ( 0.x  1.x ) generator middleware to modern promise middleware ( 2.x ). 
+	It could also convert modern promise middleware back to legacy generator middleware ( useful to help modern middleware support koa 0.x or 1.x ). 
